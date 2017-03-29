@@ -1,4 +1,4 @@
-FROM ruby:2.3.0
+FROM ruby:2.4.1
 
 ENV TESSERACT_VERSION 3.02.02
 
