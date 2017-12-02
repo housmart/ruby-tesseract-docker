@@ -4,7 +4,7 @@ ENV TESSERACT_VERSION 3.02.02
 
 RUN set -ex \
         && apt-get update -y \
-        && apt-get install -y libleptonica-dev unzip \
+        && apt-get install -y libleptonica-dev unzip nodejs npm \
         && cd /usr/src \
         && wget -O tesseract-ocr.zip "https://github.com/tesseract-ocr/tesseract/archive/$TESSERACT_VERSION.zip" \
         && unzip tesseract-ocr.zip \
