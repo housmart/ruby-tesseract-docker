@@ -13,4 +13,6 @@ RUN set -ex \
         && ./configure \
         && make \
         && make install \
-        && ldconfig
+        && ldconfig \
+        && mkdir -p /usr/local/share/tessdata
+COPY eng.traineddata /usr/local/share/tessdata
